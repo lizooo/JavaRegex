@@ -7,7 +7,8 @@ import org.junit.Test;
 
 public class RegexTest {
 
-  private Regex regex;
+
+   Regex regex = new Regex();
   
   @Test
   public void replaceTextUsingPattenTest() {
@@ -19,7 +20,6 @@ public class RegexTest {
     Scanner scan = new Scanner(System.in);
     String text = scan.nextLine();
     System.out.println(text);
-    
 
      String resultLine = regex.replaceTextUsingPatten("\\b\\S*[AaOrK]\\S*\\s?", text);
      assertEquals("Hello! check this line. this one. it ", resultLine);
